@@ -416,7 +416,7 @@
 }
 
 .top-cont__title {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 24px;
     color: #484848;
     margin-bottom: 10px;
@@ -475,6 +475,12 @@
 .about-time__img,
 .about-price__img {
     margin-right: 20px;
+
+    @media(max-width: 1279px) {
+        margin-right: 10px;
+        width: 40px;
+        height: 40px;
+    }
 }
 
 .about-price__info,
@@ -487,6 +493,7 @@
 
             @media(max-width: 1279px) {
                 font-size: 16px;
+                margin-bottom: 0;
             }
         }
 
@@ -544,7 +551,7 @@
 .btn {
     max-width: 360px;
     width: 100%;
-    display: block;
+    // display: block;
     color: #333333;
     height: 80px;
     font-size: 20px;
@@ -705,5 +712,299 @@
                 }
             }
         }
+    }
+}
+
+.about-block {
+    padding-top: 50px;
+}
+
+.main-title {
+    font-weight: 500;
+    font-size: 20px;
+    color: #484848;
+    margin-bottom: 16px;
+
+    @media(min-width: 1280px) {
+        font-size: 32px;
+        margin-bottom: 26px;
+    }
+}
+
+.cont-txt {
+    color: #6B6B6B;
+    font-size: 14px;
+
+    p {
+        margin-bottom: 24px;
+
+        @media(min-width: 1280px) {
+            margin-bottom: 35px;
+        }
+    }
+
+    @media(min-width: 1280px) {
+        font-size: 18px;
+    }
+}
+
+.reference {
+    background: #FFFFFF;
+    box-shadow: 2px 2px 20px 2px rgba(56, 55, 121, 0.19);
+    border-radius: 20px;
+    padding: 28px 14px;
+
+    @media(min-width: 1280px) {
+        padding: 37px 40px;
+    }
+}
+
+.reference__title {
+    color: #484848;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+
+    @media(min-width: 992px) {
+        text-align: left;
+    }
+
+    @media(min-width: 1280px) {
+        font-size: 20px;
+    }
+
+    @media(min-width: 1600px) {
+        font-size: 24px;
+    }
+
+    @media(min-width: 1900px) {
+        margin-bottom: 0;
+    }
+}
+
+.ref-title {
+    font-size: 16px;
+    padding-left: 48px;
+    position: relative;
+    color: #374957;
+    font-weight: 500;
+    margin-bottom: 40px;
+
+    &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40px;
+        height: 40px;
+    }
+
+    @media(min-width: 1280px) {
+        font-size: 18px;
+    }
+}
+
+.ref-title_doctor:after {
+    background: url('../img/doctor.png') no-repeat center;
+}
+
+.ref-title_docum:after {
+    background: url('../img/health-report.png') no-repeat center;
+}
+
+.ref-list {
+    color: #374957;
+    font-size: 16px;
+    margin-bottom: 35px;
+
+    @media(min-width: 1600px) {
+        margin-bottom: 0;
+    }
+
+    li {
+        margin-bottom: 15px;
+        position: relative;
+        padding-left: 15px;
+
+        &:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 7px;
+            width: 6px;
+            height: 6px;
+            border-radius: 10em;
+            background: #0C88ED;
+        }
+    }
+}
+
+.reference__item_img {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.reference__phone {
+    text-align: center;
+    padding: 25px 0px;
+
+    @media(min-width: 1900px) {
+        padding: 0;
+    }
+
+    .phone {
+        @media(max-width: 1279px) {
+            font-size: 24px;
+        }
+    }
+}
+
+.reference__column-top {
+    @media(min-width: 768px) {
+        margin-bottom: 40px;
+    }
+
+    @media(min-width: 1900px) {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 70px;
+
+        .column {
+            &:first-child {
+                width: 590px;
+            }
+        }
+    }
+}
+
+.reference__top {
+    @media(min-width: 992px) {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .reference__item {
+        &:first-child {
+            @media(min-width: 992px) {
+                width: calc(100% - 300px);
+            }
+
+            @media(min-width: 1280px) {
+                width: calc(100% - 360px);
+            }
+        }
+
+        &:last-child {
+            @media(min-width: 992px) {
+                width: 260px;
+            }
+
+            @media(min-width: 1280px) {
+                width: 360px;
+            }
+        }
+    }
+}
+
+.ref-list_left {
+    @media(min-width: 1280px) {
+        column-count: 2;
+    }
+}
+
+.reference__bottom {
+    @media(min-width: 1280px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .column {
+            &:first-child {
+                @media(min-width: 1280px) {
+                    width: 40%;
+                }
+
+                @media(min-width: 1900px) {
+                    width: 54%;
+
+                    .warn-article {
+                        max-width: 100%;
+                    }
+                }
+            }
+
+            &:last-child {
+                @media(min-width: 1280px) {
+                    width: 360px;
+                }
+            }
+        }
+    }
+}
+
+.reference__column-middle {
+    @media(min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @media(min-width: 1900px) {
+        padding-right: 50px;
+    }
+}
+
+.sub-title_ref {
+    padding-left: 50px;
+}
+
+.reference__btn-wrap {
+    text-align: center;
+
+    .btn {
+        @media(max-width: 1279px) {
+            font-size: 16px;
+        }
+    }
+}
+
+.ref-img {
+    position: relative;
+    display: inline-block;
+}
+
+.ref-img__article {
+    position: absolute;
+    top: 146px;
+    color: #E60028;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 24px;
+    border: 2px solid #E60028;
+    padding: 7px 14px;
+    transform: rotate(-43deg);
+}
+
+.about-list_ref {
+
+    @media(max-width: 767px) {
+        display: block;
+    }
+}
+
+.about-list_ref>li {
+    @media(max-width: 767px) {
+        margin-bottom: 32px;
+    }
+}
+
+.reference__phone-title {
+    color: #374957;
+    font-size: 16px;
+    margin-bottom: 23px;
+
+    @media(min-width: 1600px) {
+        font-size: 20px;
     }
 }
