@@ -1107,8 +1107,6 @@
                 &:first-child {
                     text-align: left;
                     padding-left: 28px;
-                    border-radius: 10px;
-                    overflow: hidden;
 
                     @media(min-width: 768px) {
                         width: 45%;
@@ -1196,6 +1194,7 @@
 
 .form-block {
     padding-top: 48px;
+    margin-bottom: 60px;
 }
 
 .form {
@@ -1481,6 +1480,241 @@
         background: url('../img/check-red.png') no-repeat center;
         background-size: contain;
         z-index: 10;
+        display: none;
+    }
+}
+
+.footer {
+    padding: 35px 0px;
+    background: linear-gradient(84.64deg, #00BBE4 0%, #03C4C4 100%);
+
+    @media(min-width: 1280px) {
+        padding-top: 64px;
+    }
+}
+
+.logo__article_footer {
+    li {
+        &:first-child {
+            color: white;
+        }
+
+        &:last-child {
+            color: #66E3FF;
+        }
+    }
+}
+
+.sub-title_footer {
+    color: white;
+    padding-left: 32px;
+    margin-bottom: 25px;
+}
+
+.footer-link {
+    font-size: 18px;
+    color: white;
+}
+
+.footer-list {
+    font-size: 18px;
+    color: white;
+
+    li {
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.phone_footer {
+    color: #66E3FF;
+    padding-left: 32px;
+
+    &:after {
+        width: 24px;
+        height: 24px;
+        background: url('../img/phone-w.png') no-repeat center;
+    }
+
+    span {
+        color: white;
+    }
+}
+
+.logo_footer {
+    margin-bottom: 24px;
+
+    @media(max-width: 991px) {
+        justify-content: center;
+    }
+}
+
+.logo__img_footer {
+    width: 50px;
+    height: auto;
+    padding-top: 4px;
+
+    img {
+        display: block;
+    }
+}
+
+.adress_footer {
+    color: white;
+    margin-bottom: 25px;
+    display: inline-block;
+
+    &:after {
+        background: url('../img/hospital-w.png') no-repeat center;
+    }
+}
+
+.payment {
+    text-align: center;
+    color: white;
+    font-weight: 600;
+
+    @media(max-width: 767px) {
+        padding-top: 40px;
+    }
+}
+
+.payment__article {
+    margin-bottom: 10px;
+}
+
+.payment-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    li {
+        &:not(:last-child) {
+            margin-right: 24px;
+        }
+    }
+}
+
+.copy {
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+}
+
+.footer__top {
+    @media(min-width: 992px) {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .column {
+        &:first-child {
+            @media(max-width: 991px) {
+                text-align: center;
+            }
+
+            @media(min-width: 992px) {
+                width: 30%;
+            }
+
+            @media(min-width: 1280px) {
+                width: 24%;
+            }
+
+            @media(min-width: 1600px) {
+                width: 20%;
+            }
+
+            @media(min-width: 1900px) {
+                width: 18%;
+            }
+        }
+
+        &:nth-child(2) {
+            @media(max-width: 991px) {
+                display: none;
+            }
+
+            @media(min-width: 992px) {
+                width: 30%;
+            }
+
+            @media(min-width: 1280px) {
+                width: 24%;
+            }
+        }
+
+        &:nth-child(3) {
+            @media(max-width: 991px) {
+                display: none;
+            }
+
+            @media(min-width: 992px) {
+                width: 30%;
+            }
+
+            @media(min-width: 1280px) {
+                width: 25%;
+            }
+        }
+
+        &:nth-child(4) {
+            @media(min-width: 992px) {
+                width: 100%;
+            }
+
+            @media(min-width: 1280px) {
+                width: 24%;
+            }
+
+            @media(min-width: 1600px) {
+                width: 28%;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            @media(min-width: 1900px) {
+                width: 25%;
+            }
+        }
+    }
+}
+
+.footer__bottom {
+    padding-top: 80px;
+
+    @media(min-width: 992px) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.footer-list {
+    @media(min-width: 992px) and (max-width: 1279px) {
+        display: flex;
+        justify-content: center;
+        padding: 25px 0px;
+
+        li {
+            &:not(:last-child) {
+                margin-right: 30px;
+            }
+        }
+    }
+
+    @media(min-width: 1280px) {
+        margin-bottom: 25px;
+        padding-left: 40px;
+    }
+}
+
+.footer-list,
+.metr {
+    @media(max-width: 991px) {
         display: none;
     }
 }
