@@ -217,8 +217,7 @@
     font-weight: 600;
     padding-left: 46px;
 
-    &:after {
-        content: '';
+    .phone__icon {
         position: absolute;
         left: 0;
         top: 50%;
@@ -226,7 +225,10 @@
         width: 36px;
         height: 36px;
         border-radius: 10em;
-        background: #FFED00 url('../img/phone.png') no-repeat center;
+        background: #FFED00;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     span {
@@ -239,7 +241,7 @@
     color: #6B6B6B;
     padding-left: 42px;
 
-    &:after {
+    .adress__icon {
         content: '';
         position: absolute;
         left: 0;
@@ -247,8 +249,6 @@
         transform: translateY(-50%);
         width: 30px;
         height: 30px;
-        border-radius: 10em;
-        background: url('../img/hospital.png') no-repeat center;
     }
 }
 
@@ -528,6 +528,10 @@
     font-size: 18px;
     position: relative;
 
+    .warn-article__icon {
+        display: none;
+    }
+
     @media(max-width: 1279px) {
         font-size: 16px;
     }
@@ -535,15 +539,14 @@
     @media(min-width: 1280px) {
         padding-left: 60px;
 
-        &:after {
-            content: '';
+        .warn-article__icon {
+            display: block;
             position: absolute;
             left: 0;
             top: 50%;
             transform: translateY(-50%);
             width: 42px;
             height: 40px;
-            background: url('../img/warn-icon.png') no-repeat center;
         }
     }
 }
@@ -813,8 +816,7 @@
     font-weight: 500;
     margin-bottom: 40px;
 
-    &:after {
-        content: '';
+    .ref-title__icon {
         position: absolute;
         left: 0;
         top: 50%;
@@ -826,14 +828,6 @@
     @media(min-width: 1280px) {
         font-size: 18px;
     }
-}
-
-.ref-title_doctor:after {
-    background: url('../img/doctor.png') no-repeat center;
-}
-
-.ref-title_docum:after {
-    background: url('../img/health-report.png') no-repeat center;
 }
 
 .ref-list {
@@ -1046,15 +1040,13 @@
         padding-left: 55px;
         font-size: 20px;
 
-        &:after {
-            content: '';
+        .ref-helth__icon {
             position: absolute;
             left: 0;
             top: 50%;
             transform: translateY(-50%);
             width: 40px;
             height: 40px;
-            background: url('../img/nurse.png') no-repeat center;
         }
     }
 }
@@ -1531,10 +1523,10 @@
     color: #66E3FF;
     padding-left: 32px;
 
-    &:after {
+    .phone__icon {
         width: 24px;
         height: 24px;
-        background: url('../img/phone-w.png') no-repeat center;
+        background: none;
     }
 
     span {
